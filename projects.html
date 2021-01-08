@@ -7,47 +7,87 @@
   </head>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-        <a class="navbar-brand" href="{% url 'project_index' %}">Portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <div class="container">
+    <a class="navbar-brand" href="https://tungr.github.io/">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'project_index' %}">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'blog_index' %}">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/tungr" target="_blank">Github</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/robert-tung-799026134/" target="_blank">LinkedIn</a>
-          </ul>
-        </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://tungr.github.io/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://tungr.github.io/projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/tungr" target="_blank">Github</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="https://www.linkedin.com/in/robert-tung-799026134/" target="_blank">LinkedIn</a>
+      </ul>
     </div>
+  </div>
 </nav>
 
 <div class="container">
-    <h1>Projects</h1>
-<div class="row">
+  <h1>Projects</h1>
+  <div class="row">
     <div class="col-md-4">
-        <div class="card border-primary mb-3">
-            <img class="card-img-top" src="{% static project.image %}">
-            <div class="card-body">
-                <h5 class="card-title">Test Title</h5>
-                <p class="card-text">Test content</p>
-                <a href="https://tungr.github.io/"
-                   class="btn btn-info">
-                    Read More
-                </a>
-            </div>
+      <div class="card border-primary mb-3">
+        <img class="card-img-top" src="./media/cowrie_data.png">
+        <div class="card-body">
+          <h5 class="card-title">Cowrie Honeypot Data Aquistion</h5>
+          <p class="card-text">Cowrie honeypot ran at Clarkson University</p>
+          <a href="https://tungr.github.io/projects/cowrie_honeypot"
+            class="btn btn-info">
+              Read More
+          </a>
         </div>
+      </div>
     </div>
-</div>
+    <div class="col-md-4">
+      <div class="card border-primary mb-3">
+        <img class="card-img-top" src="./media/discord.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Discord Bot</h5>
+          <p class="card-text">Bot created for use on Discord</p>
+          <a href="https://tungr.github.io/projects/discord_bot"
+            class="btn btn-info">
+              Read More
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card border-primary mb-3">
+        <img class="card-img-top" src="./media/scrabble.png">
+        <div class="card-body">
+          <h5 class="card-title">Example Project</h5>
+          <p class="card-text">Example description of project</p>
+          <a href="https://tungr.github.io/"
+            class="btn btn-info">
+              Read More
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card border-primary mb-3">
+        <img class="card-img-top" src="./media/scrabble.png">
+        <div class="card-body">
+          <h5 class="card-title">Example Project</h5>
+          <p class="card-text">Example description of project</p>
+          <a href="https://tungr.github.io/"
+            class="btn btn-info">
+              Read More
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 <body>

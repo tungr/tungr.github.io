@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
     <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/splide.min.css">
+    <script>
+      document.addEventListener( 'DOMContentLoaded', function () {
+        new Splide( '.splide' ).mount();
+      } );
+    </script>
   </head>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -32,25 +38,79 @@
   </div>
 </nav>
 
-<h1>Discord Bot</h1>
+<h1>Coeus Discord Bot</h1>
 <div class="row">
-    <div class="col-md-8">
-        <img src="{% static project.image %}" alt="" width="100%">
+  <div class="col-md-8">
+    <div class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+        <div class="splide__slide__container">
+					<img src="../media/CoeusDiagram/Slide1.JPG" alt="Top Level State Machine" width="90%">
+        </div>
+        <div class="splide__content">
+          The top-level state machine of the Coeus Discord bot. This shows the base interactions between all the scripts that run the bot.
+        </div>
+        </li>
+        <li class="splide__slide">
+        <div class="splide__slide__container">
+					<img src="../media/CoeusDiagram/Slide2.JPG" alt="bot.py State Diagram" width="90%">
+        </div>
+        <div class="splide__content">
+          The Python script that runs the Discord bot, also known as bot.py. This file is called to start the bot up and to call any cogs that are in the “cogs” folder. The main commands/functions called from this script are only to manage the cogs.
+        </div>
+        </li>
+        <li class="splide__slide">
+        <div class="splide__slide__container">
+					<img src="../media/CoeusDiagram/Slide3.JPG" alt="main.py State Diagram" width="90%">
+        </div>
+        <div class="splide__content">
+          The main.py Python script/cog contains most of the functions in the bot. Of the functions in the script, most of them are simple commands that the user may find useful to query. For example: The poll command allows a user to create a poll with a specified question and options.
+        </div>
+        </li>
+        <li class="splide__slide">
+        <div class="splide__slide__container">
+					<img src="../media/CoeusDiagram/Slide4.JPG" alt="admin.py State Diagram" width="90%">
+        </div>
+        <div class="splide__content">
+          The admin.py script is for user management of a server. Those with admin permissions on a server can ban, kick, and unban a user through the bot. The admin.py script also allows a user to clear the most recent messages in the chat.
+        </div>
+        </li>
+        <li class="splide__slide">
+        <div class="splide__slide__container">
+					<img src="../media/CoeusDiagram/Slide5.JPG" alt="music.py State Diagram" width="90%">
+        </div>
+        <div class="splide__content">
+          As the script name may suggest, this script gives music functionality with the bot. It allows a user to play music while in a voice channel via YouTube links. The commands called from the bot are similar to functionalities of music apps like Spotify and YouTube such as play, pause, and skip.
+        </div>
+        </li>
+        <li class="splide__slide">
+        <div class="splide__slide__container">
+					<img src="../media/CoeusDiagram/Slide6.JPG" alt="levels.py State Diagram" width="90%">
+        </div>
+        <div class="splide__content">
+          The final script that is accessible in the bot is levels.py. This script allows the bot to keep track of user interaction with the bot (such as calling the –cats command) and award experience and levels to users. This data is updated and stored through a JSON file.
+        </div>
+        </li>
+      </ul>
     </div>
-    <div class="col-md-4">
-        <h4>About the project:</h4>
-        <p>Created a Discord bot that utilizes the discord.py API. Functions include: Rolling dice, creating a poll, playing music, and many more. 
-        The bot is currently not hosted and can only be activated via personal computer. 
-        This is an on-going project as many more features can be added to enhance the uniqueness of the bot, such as text analysis through machine learning.</p>
-        <br>
-        <h4>Technology used:</h4>
-        <p>Python</p>
     </div>
+  </div>
+  <div class="col-md-4">
+      <h4>About the project:</h4>
+      <p>Created a Discord bot that utilizes the discord.py API. Functions include: Rolling dice, creating a poll, playing music, and many more. 
+      The bot is currently not hosted and can only be activated via personal computer. 
+      This is an on-going project as many more features can be added to enhance the uniqueness of the bot, such as text analysis through machine learning.</p>
+      <br>
+      <h4>Programming Language:</h4>
+      <p>Python</p>
+  </div>
 </div>
 
 <body>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 </body>
 </html>

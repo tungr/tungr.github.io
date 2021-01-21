@@ -1,6 +1,24 @@
 h1 {
-    margin: .5em;
+    padding: .5em;
 }
 p {
     width: 75%;
+}
+div.splide {
+    margin-left: 2em;
+}
+.splide__slide__container{
+    text-align: center;
+    display: block;
+}
+.splide__content{
+    padding: .5rem 0;
+    text-align: center;
+    display: block;
+    margin-bottom: 1em;
+    font-size: .9vw;
+}
+img{
+    border-radius: 30px;
+    border: 3px solid #4471e3;
 }

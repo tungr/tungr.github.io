@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
     <link rel="stylesheet" href="../css/projects.css">
+    <script>
+      document.addEventListener( 'DOMContentLoaded', function () {
+        new Splide( '.splide' ).mount();
+      } );
+    </script>
     <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
       <script type='text/javascript'>
       
@@ -276,28 +281,28 @@
 <div class="row">
     <div class="col-md-8">
     <div class="splide">
-    <div class="splide__track">
-      <ul class="splide__list">
-        <div class="splide__slide__container">
-					<div id="chart_div" style="width: 1180px;"></div>
-        </div>
-        <div class="splide__content">
-          The data shown below only portrays <b><u>some</u></b> of the GeoIP data collected from the log files. Specifically 3/4/2020, 3/6/2020, 3/10/2020, and 3/14/2020.
-          This map was created using Google GeoCharts. The data listed is only limited to 3 columns so dates could not be added.
-          Some locations with multiple circles on top of each other indicate multiple IP addresses with similar GeoIPs. (They kind of look greyish).
-        </div>
-      </ul>
-    </div>
+      <div class="splide__track">
+        <ul class="splide__list">
+          <div class="splide__slide__container">
+            <div id="chart_div" style="width: 1180px;"></div>
+          </div>
+          <div class="splide__content">
+            The data shown below only portrays <b><u>some</u></b> of the GeoIP data collected from the log files. Specifically 3/4/2020, 3/6/2020, 3/10/2020, and 3/14/2020.
+            This map was created using Google GeoCharts. The data listed is only limited to 3 columns so dates could not be added.
+            Some locations with multiple circles on top of each other indicate multiple IP addresses with similar GeoIPs. (They kind of look greyish).
+          </div>
+        </ul>
+      </div>
     </div>
     </div>
     <div class="col-md-4">
-        <h4>About the project:</h4>
-        <p>Grabbed IP data from a honeypot created with Cowrie. 
-        The honeypot was hosted in the IT department at Clarkson University and collected data for about 2 months. 
-        This IP data was converted into their respective GeoIP locations using Python and mapped on to a Google GeoCharts web page.</p>
-        <br>
-        <h4>Technology used:</h4>
-        <p>Python, JSON</p>
+      <h4>About the project:</h4>
+      <p>Grabbed IP data from a honeypot created with Cowrie. 
+      The honeypot was hosted in the IT department at Clarkson University and collected data for about 2 months. 
+      This IP data was converted into their respective GeoIP locations using Python and mapped on to a Google GeoCharts web page.</p>
+      <br>
+      <h4>Technology used:</h4>
+      <p>Python, JSON</p>
     </div>
 </div>
 

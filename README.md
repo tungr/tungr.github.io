@@ -4,6 +4,7 @@
 * This website is based off my original website created in the Django framework.
 ## Languages I typically work with
 * Python - used most
-* HTML/CSS/JS
+* C/C++
 * C#
+* HTML/CSS/JS
 * MATLAB

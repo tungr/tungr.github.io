@@ -1,4 +1,8 @@
-h1 {
+h1, h2 {
     margin: auto;
     padding: 10px;
+}
+div.intro {
+    margin: 100px;
+    margin-top: 10px;
 }

@@ -287,9 +287,10 @@
             <div id="chart_div" style="width: 1180px;"></div>
           </div>
           <div class="splide__content">
-            The data shown below only portrays <b><u>some</u></b> of the GeoIP data collected from the log files. Specifically 3/4/2020, 3/6/2020, 3/10/2020, and 3/14/2020.
-            This map was created using Google GeoCharts. The data listed is only limited to 3 columns so dates could not be added.
-            Some locations with multiple circles on top of each other indicate multiple IP addresses with similar GeoIPs. (They kind of look greyish).
+            This map was created using Google GeoCharts. The data shown only portrays <b><u>some</u></b> of the GeoIP data collected from the log files. 
+            Specifically <u>3/4/2020</u>, <u>3/6/2020</u>, <u>3/10/2020</u>, and <u>3/14/2020</u>. The data listed is only limited to 3 columns so dates could not be added.
+            Some locations contain many overlapping circles indicating <b>multiple IP addresses with similar GeoIPs</b> (they kind of look greyish).  
+            This indicates those IP addresses are possibly from a database center.
           </div>
         </ul>
       </div>
@@ -297,9 +298,10 @@
     </div>
     <div class="col-md-4">
       <h4>About the project:</h4>
-      <p>Grabbed IP data from a honeypot created with Cowrie. 
-      The honeypot was hosted in the IT department at Clarkson University and collected data for about 2 months. 
-      This IP data was converted into their respective GeoIP locations using Python and mapped on to a Google GeoCharts web page.</p>
+      <p>The Cowrie honeypot was hosted in the IT department at Clarkson University and collected data for about 2 months.</p>
+      <p>This data contained information of how malicious users attempted to use or gain information out of the honeypot (such as looking for important documents, setting up digital currency mining, or uploading viruses).</p>
+      <p>The IP information of the users was utilized for this chart. This IP data was converted into their respective GeoIP locations using Python and mapped on to Google GeoCharts.</p>
+      <p>(Side note: The map to the left is interactable)</p>
       <br>
       <h4>Technology used:</h4>
       <p>Python, JSON</p>
